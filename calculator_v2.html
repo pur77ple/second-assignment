@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" type="text/css" href="public/style.css">
+</head>
+<body>
+  <div class="calculator">
+
+    <div id="history-container">
+    <ul id="history-list"></ul>
+      </div>
+      
+    <input class="value" type="text" id="display" readonly>
+
+
+      <button class="clr" onclick="clearDisplay().value">AC</button>
+      <button onclick="deleteLastCharacter().value">&larr;</button>
+      <button onclick="append('/').value">/</button>
+      <button onclick="append('7').value">7</button>
+      <button onclick="append('8').value">8</button>
+      <button onclick="append('9').value">9</button>
+      <button onclick="append('*').value">*</button>
+       
+      <button onclick="append('4').value">4</button>
+      <button onclick="append('5').value">5</button>
+      <button onclick="append('6').value">6</button>
+      
+      <button onclick="append('+').value">+</button>
+      
+      <button onclick="append('1').value">1</button>
+      <button onclick="append('2').value">2</button>
+      <button onclick="append('3').value">3</button>
+      <button onclick="append('-').value">-</button>
+      <button class="zero" onclick="append('0').value">0</button>
+      <button onclick="append('.').value">.</button>
+      <button class="equal" onclick="calculate().value">=</button>
+
+   
+      <button onclick="calculateSine()">sin</button>
+      <button onclick="calculateCosine()">cos</button>
+      <button onclick="calculateTan()">tan</button>
+      <button onclick="calculateLogarithm().value">log</button>
+     
+
+      <button class="an" onclick="append('ans').value">ans</button> 
+      <button onclick="calculateSquareRoot().value">√</button>
+      <div> <button class="history" onclick="insertHistory()">History</button></div>
+     
+
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
